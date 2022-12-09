@@ -537,11 +537,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `[❗] Limit harian kamu telah habis, silahkan beli melalui *${usedPrefix}buy limit*`, m)
+                    this.reply(m.chat, `[❗] Your daily limit has run out, please buy through *${usedPrefix}buy limit*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `[💬] Diperlukan level ${plugin.level} untuk menggunakan perintah ini\n*Level mu:* ${_user.level} 📊`, m)
+                    this.reply(m.chat, `[💬] Required level ${plugin.level} to use the command ini\n*Level mu:* ${_user.level} 📊`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -597,7 +597,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' ʟɪᴍɪᴛ ᴋᴀᴍᴜ ᴛᴇʀᴘᴀᴋᴀɪ ✔️')
+                        m.reply(+m.limit + ' your limit is used ✔️')
                 }
                 break
             }
@@ -697,7 +697,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupname: await this.getName(id),
                                 membercount: groupMetadata.participants.length
                             })
-    conn.sendButtonDoc(id, text, wm, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'ok', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    conn.sendButtonDoc(id, text, wm, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'ꜱᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'ok', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: global.sig,
     mediaType: 2, 
     description: global.sig, 
@@ -777,13 +777,13 @@ global.dfail = (type, m, conn) => {
         rowner: '*ᴏɴʟʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴅᴇᴠᴇʟᴏᴘᴇʀ ʙᴏᴛ',
         owner: '*ᴏɴʟʏ ᴏᴡɴᴇʀ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴏᴡɴᴇʀ ʙᴏᴛ',
         mods: '*ᴏɴʟʏ ᴍᴏᴅᴇʀᴀᴛᴏʀ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴍᴏᴅᴇʀᴀᴛᴏʀ ʙᴏᴛ',
-        premium: '*ᴏɴʟʏ ᴘʀᴇᴍɪᴜᴍ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ',
-        group: '*ɢʀᴏᴜᴘ ᴄʜᴀᴛ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ʙɪsᴀ ᴅɪᴘᴀᴋᴀɪ ᴅɪᴅᴀʟᴀᴍ ɢʀᴏᴜᴘ',
-        private: '*ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ʙɪsᴀ ᴅɪᴘᴀᴋᴀɪ ᴅɪᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ',
+        premium: '*ᴏɴʟʏ ᴘʀᴇᴍɪᴜᴍ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ',
+        group: '*ɢʀᴏᴜᴘ ᴄʜᴀᴛ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ʙɪꜱᴀ ᴅɪᴘᴀᴋᴀɪ ᴅɪᴅᴀʟᴀᴍ ɢʀᴏᴜᴘ',
+        private: '*ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ʙɪꜱᴀ ᴅɪᴘᴀᴋᴀɪ ᴅɪᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ',
         admin: '*ᴏɴʟʏ ᴀᴅᴍɪɴ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴀᴅᴍɪɴ ɢʀᴏᴜᴘ',
-        botAdmin: '*ᴏɴʟʏ ʙᴏᴛ ᴀᴅᴍɪɴ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ʙɪsᴀ ᴅɪɢᴜɴᴀᴋᴀɴ ᴋᴇᴛɪᴋᴀ ʙᴏᴛ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ',
-        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* • ᴋᴇᴛɪᴋ  .daftar ᴜɴᴛᴜᴋ ʙɪsᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ', 
-        restrict: '*ʀᴇsᴛʀɪᴄᴛ* • ʀᴇsᴛʀɪᴄᴛ ʙᴇʟᴜᴍ ᴅɪɴʏᴀʟᴀᴋᴀɴ ᴅɪᴄʜᴀᴛ ɪɴɪ',
+        botAdmin: '*ᴏɴʟʏ ʙᴏᴛ ᴀᴅᴍɪɴ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ʙɪꜱᴀ ᴅɪɢᴜɴᴀᴋᴀɴ ᴋᴇᴛɪᴋᴀ ʙᴏᴛ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ',
+        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪꜱᴛᴇʀᴇᴅ ʏᴇᴛ* • ᴋᴇᴛɪᴋ  .daftar ᴜɴᴛᴜᴋ ʙɪꜱᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ', 
+        restrict: '*ʀᴇꜱᴛʀɪᴄᴛ* • ʀᴇꜱᴛʀɪᴄᴛ ʙᴇʟᴜᴍ ᴅɪɴʏᴀʟᴀᴋᴀɴ ᴅɪᴄʜᴀᴛ ɪɴɪ',
     }[type]
     if (msg) return conn.send2ButtonDoc(m.chat, msg, author, '💌 Creator', '.creator', '🎀 Menu', '.menu', fakes, adReply)
 }
