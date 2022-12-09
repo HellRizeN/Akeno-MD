@@ -1,5 +1,5 @@
 {
-    "name": "Elaina-BOT",
+    "name": "Akeno-MD",
     "version": "3.3.0",
     "description": "RPG BOT Whatsapp",
     "main": "index.js",
@@ -29,16 +29,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/ImYanXiao/Elaina-MultiDevice",
+    "homepage": "https://github.com/HellRizeN/Akeno-MD",
     "author": {
-        "name": "ImYanXiao"
+        "name": "HellRizeN"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ImYanXiao/Elaina-MultiDevice.git"
+        "url": "git+https://github.com/HellRizeN/Akeno-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/ImYanXiao/Elaina-MultiDevice/issues"
+        "url": "https://github.com/HellRizeN/Akeno-MD/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
