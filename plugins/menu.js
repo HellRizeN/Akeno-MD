@@ -1,5 +1,5 @@
-// Script Ori By BochilGaming
-// Ditulis Ulang Oleh ImYanXiao
+// ◈ ━━━━━━━ ⸙ ᴍᴀᴅᴇ ʙʏ ꜱᴄᴏᴛᴄʜ ⸙ ━━━━━━━ ◈
+
 
 import { promises } from 'fs'
 import { join } from 'path'
@@ -313,8 +313,8 @@ let tek = `✧────···[ Dashboard ]···────✧
 │⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┬
 ├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ *ᴀᴜᴛʜᴏʀ :* ʙᴏᴄʜɪʟɢᴀᴍɪɴɢ
-┴ ▸ *ᴏᴡɴᴇʀ :* ɪᴍ-ʏᴀɴxɪᴀᴏ
+│ ▸ *ᴀᴜᴛʜᴏʀ :* ᴏꭗ ᤱ ɪᴛᴀ֟፝ᴄʜɪ﹤ᴣ
+┴ ▸ *ᴏᴡɴᴇʀ :* ꜱᴀʏ.ꜱᴄᴏᴛᴄʜ 💔
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
 │ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
@@ -543,7 +543,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/ImYanXiao/Elaina-MultiDevice'
+                        url: 'https://github.com/HellRizeN'
                     }
                 },
                 {
@@ -566,8 +566,8 @@ const listMessage = {
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'Donasi💵',
-                        id: '.donasi'
+                        displayText: 'Donation💵',
+                        id: '.Donation'
                     }
                 },
             ]
@@ -603,7 +603,7 @@ const listMessage = {
       showAdAttribution: true
       }}}}}}, {})*/
       
-     //---Made By @ImYanXiao
+     //---Made By @say.scotch
     // Mampus Di Enc 🧢
     // Gausah Dihapus, Thx
     //------------------ BUTTONDOC WITH EXTERNALADS NEW
@@ -675,27 +675,27 @@ function ucapan() {
 function timeimg() {
     let imgloc = ''
   const time = moment.tz('Asia/Jakarta').format('HH')
-  imgloc = ('./media/elaina8.png')
+  imgloc = ('./Akeno Senpai/elaina8.png')
   if (time >= 0) {
-    imgloc = ('./media/elaina.png')
+    imgloc = ('./Akeno Senpai/pic.png')
   }
   if (time >= 4) {
-    imgloc = ('./media/elaina2.png')
+    imgloc = ('./Akeno Senpai/pic2.png')
   }
   if (time >= 8) {
-    imgloc = ('./media/elaina3.png')
+    imgloc = ('./Akeno Senpai/pic3.png')
   }
   if (time >= 12) {
-    imgloc = ('./media/elaina4.png')
+    imgloc = ('./Akeno Senpai Senpai/pic4.png')
   }
   if (time >= 16) {
-    imgloc = ('./media/elaina5.png')
+    imgloc = ('./Akeno Senpai/pic5.png')
   }
   if (time >= 20) {
-    imgloc = ('./media/elaina6.png')
+    imgloc = ('./Akeno Senpai/pic6.png')
   }
   if (time >= 24) {
-    imgloc = ('./media/elaina7.png')
+    imgloc = ('./Akeno Senpai/pic8.png')
   }
   return imgloc
 }
